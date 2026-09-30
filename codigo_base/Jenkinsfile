@@ -20,24 +20,24 @@ pipeline {
                     env.VERSION = "1.0.${env.BUILD_NUMBER}-${sha}"
                     echo "Versión inmutable: ${env.VERSION}"
                 }
-                dir('backend') {
+                dir('codigo_base/backend') {
                     sh 'mvn -B test'
                 }
             }
             post {
                 always {
-                    junit 'backend/target/surefire-reports/*.xml'
+                    junit 'codigo_base/backend/target/surefire-reports/*.xml'
                 }
             }
         }
 
         stage('Package & Tag Inmutable') {
             steps {
-                dir('backend') {
+                dir('codigo_base/backend') {
                     sh 'mvn -B package -DskipTests -Drevision=$VERSION'
                     sh 'docker build -t $REGISTRY/studytrack-api:$VERSION .'
                 }
-                dir('frontend') {
+                dir('codigo_base/frontend') {
                     sh 'docker build --build-arg VITE_API_URL=http://localhost:8080 -t $REGISTRY/studytrack-frontend:$VERSION .'
                 }
             }
@@ -54,8 +54,8 @@ pipeline {
     </server>
   </servers>
 </settings>'''
-                dir('backend') {
-                    sh 'mvn -B deploy -DskipTests -Drevision=$VERSION -Dnexus.url=$NEXUS_URL -s ../ci-settings.xml'
+                dir('codigo_base/backend') {
+                    sh 'mvn -B deploy -DskipTests -Drevision=$VERSION -Dnexus.url=$NEXUS_URL -s ../../ci-settings.xml'
                 }
                 sh '''
                     echo "$NEXUS_CREDS_PSW" | docker login $REGISTRY -u "$NEXUS_CREDS_USR" --password-stdin
@@ -67,7 +67,7 @@ pipeline {
 
         stage('Deploy & Smoke Test') {
             steps {
-                sh 'IMAGE_TAG=$VERSION docker compose -f deploy/docker-compose.yml up -d'
+                sh 'IMAGE_TAG=$VERSION docker compose -f codigo_base/deploy/docker-compose.yml up -d'
                 sh '''
                     for i in $(seq 1 20); do
                         if curl -fs http://studytrack-api:8080/api/tasks; then

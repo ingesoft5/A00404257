@@ -1,0 +1,1262 @@
+Script started on 2026-09-30 08:58:19-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="173" LINES="23"]
+[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ cleargit clone https://github.com/ingesoft5/A00404257.gittaller-g3-jenkins-cicd.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker[K[1Pclear[1Pexitdocker --versionclear[K[K[K[K[K[Kgit commit -m"[K "commit"
+[?2004l}Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ingesoft@205m11.(none)')
+[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ }git con[K[K[K[K[K[K[K[Kgit config --global user.email "giuseppeportocarrero975@gmail.com"
+[?2004l[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ git config --global user.name "Giuseppe1r"
+[?2004l[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ git config --global user.name "Giuseppe1r"email "giuseppeportocarrero975@gmail.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmmit -m "commit"[K
+[?2004l[main cc591ab] commit
+ 1245 files changed, 5309 insertions(+), 174 deletions(-)
+ create mode 100644 codigo_base/.gitignore
+ create mode 100644 codigo_base/frontend/.dockerignore
+ create mode 100644 codigo_base/frontend/package-lock.json
+ create mode 100644 codigo_base/frontend/tsconfig.tsbuildinfo
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le64.cache-9
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.cache/fontconfig/4c599c202bc5c08e2d34565a40eac3b2-le64.cache-9
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-9
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.cache/fontconfig/CACHEDIR.TAG
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.cache/fontconfig/d589a48862398ed80a3d6066f4f56f4c-le64.cache-9
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/.lastStarted
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/config.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/copy_reference_file.log
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/credentials.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/hudson.model.UpdateCenter.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/hudson.plugins.git.GitTool.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/identity.key.enc
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jenkins.install.InstallUtil.lastExecVersion
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jenkins.install.UpgradeWizard.state
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jenkins.model.JenkinsLocationConfiguration.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jenkins.telemetry.Correlator.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jobs/tudytrack-pipeline/builds/permalinks
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/jobs/tudytrack-pipeline/config.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/nodeMonitors.xml
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/plugins.txt
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/queue.xml.bak
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/secret.key
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/secret.key.not-so-secret
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/updates/default.json
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/updates/hudson.plugins.gradle.GradleInstaller
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/updates/hudson.tasks.Ant.AntInstaller
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/updates/hudson.tasks.Maven.MavenInstaller
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/userContent/readme.txt
+ create mode 100644 codigo_base/infra/jenkins_config/jenkins_home/users/admin_c29ac1bd210b56c875cdc9c5acd6ef48b0f6489ac7da64d5652cd10bbcc4c4ec/config.xml
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/DA87C7AE-ACEFB1E5-99D9BAC1-50A48DD7-55EDCF6A-deletions.index
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/DA87C7AE-ACEFB1E5-99D9BAC1-50A48DD7-55EDCF6A-metrics.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/00db680a-1223-4ef9-a114-0956725ee7a1/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/00db680a-1223-4ef9-a114-0956725ee7a1/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/00db680a-1223-4ef9-a114-0956725ee7a1/a58df85f-e3f7-46b5-bdc6-3199932e2a26.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/00db680a-1223-4ef9-a114-0956725ee7a1/a58df85f-e3f7-46b5-bdc6-3199932e2a26.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/0f6545f5-4e15-463b-9a8b-83b1533fa502/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/0f6545f5-4e15-463b-9a8b-83b1533fa502/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/0f6545f5-4e15-463b-9a8b-83b1533fa502/8e89f5be-d614-43d8-9060-2bed98e847ee.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/0f6545f5-4e15-463b-9a8b-83b1533fa502/8e89f5be-d614-43d8-9060-2bed98e847ee.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/11468bf2-b2f3-490c-8272-86fe3676a0ce/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/11468bf2-b2f3-490c-8272-86fe3676a0ce/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/11468bf2-b2f3-490c-8272-86fe3676a0ce/b42285b3-fb41-444f-8176-d1778d283cb3.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/11468bf2-b2f3-490c-8272-86fe3676a0ce/b42285b3-fb41-444f-8176-d1778d283cb3.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/2690f056-0ea8-47bb-bfd7-9cca84fd5924/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/2690f056-0ea8-47bb-bfd7-9cca84fd5924/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/2690f056-0ea8-47bb-bfd7-9cca84fd5924/8b9d0e3c-a673-4802-900e-581d692dbb52.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/2690f056-0ea8-47bb-bfd7-9cca84fd5924/8b9d0e3c-a673-4802-900e-581d692dbb52.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/26b0df90-502d-4ffb-8c75-1e68d7cdf9d4/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/26b0df90-502d-4ffb-8c75-1e68d7cdf9d4/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/26b0df90-502d-4ffb-8c75-1e68d7cdf9d4/1bdfc1ea-1ca9-4f2c-b1e3-8724a5ac5f97.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/26b0df90-502d-4ffb-8c75-1e68d7cdf9d4/1bdfc1ea-1ca9-4f2c-b1e3-8724a5ac5f97.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/317e0929-bf5c-432d-90cf-e1788f8993e7/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/317e0929-bf5c-432d-90cf-e1788f8993e7/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/317e0929-bf5c-432d-90cf-e1788f8993e7/2f193768-c54d-4971-9b31-e037754fb8bc.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/317e0929-bf5c-432d-90cf-e1788f8993e7/2f193768-c54d-4971-9b31-e037754fb8bc.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/3ba8d3f0-1c52-4a19-8734-0515b32f8e6e/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/3ba8d3f0-1c52-4a19-8734-0515b32f8e6e/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/3ba8d3f0-1c52-4a19-8734-0515b32f8e6e/69168352-7b4d-4363-a783-deeaaea4b226.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/3ba8d3f0-1c52-4a19-8734-0515b32f8e6e/69168352-7b4d-4363-a783-deeaaea4b226.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/45eb0293-b490-479c-baf5-92b26966f784/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/45eb0293-b490-479c-baf5-92b26966f784/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/45eb0293-b490-479c-baf5-92b26966f784/44734e26-2d67-441c-a1f7-c19581ed1ebf.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/45eb0293-b490-479c-baf5-92b26966f784/44734e26-2d67-441c-a1f7-c19581ed1ebf.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5dd403bb-0aad-4f26-a364-5b6bb0266a97/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5dd403bb-0aad-4f26-a364-5b6bb0266a97/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5dd403bb-0aad-4f26-a364-5b6bb0266a97/8360eea6-68c1-46ef-9ce6-07ccbe466823.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5dd403bb-0aad-4f26-a364-5b6bb0266a97/8360eea6-68c1-46ef-9ce6-07ccbe466823.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5fd99b4e-bd6c-4592-a221-30442afcb76c/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5fd99b4e-bd6c-4592-a221-30442afcb76c/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5fd99b4e-bd6c-4592-a221-30442afcb76c/fa093a85-e79d-42f5-a77b-a8d8b006ce8d.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/5fd99b4e-bd6c-4592-a221-30442afcb76c/fa093a85-e79d-42f5-a77b-a8d8b006ce8d.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6a0ef0f7-101c-4ba5-9935-cb840c5bc293/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6a0ef0f7-101c-4ba5-9935-cb840c5bc293/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6a0ef0f7-101c-4ba5-9935-cb840c5bc293/27270a1d-7e3c-48ff-9838-73877502032c.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6a0ef0f7-101c-4ba5-9935-cb840c5bc293/27270a1d-7e3c-48ff-9838-73877502032c.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6de3832f-de35-41e7-85ca-cc3a64c35668/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6de3832f-de35-41e7-85ca-cc3a64c35668/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6de3832f-de35-41e7-85ca-cc3a64c35668/2b67565c-4a99-4b7d-a5c8-8d0072cd8b24.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/6de3832f-de35-41e7-85ca-cc3a64c35668/2b67565c-4a99-4b7d-a5c8-8d0072cd8b24.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/72922523-6840-49f7-88e8-61249ec50283/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/72922523-6840-49f7-88e8-61249ec50283/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/72922523-6840-49f7-88e8-61249ec50283/629c899b-fb63-4a30-8959-c4ea2f49b6f4.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/72922523-6840-49f7-88e8-61249ec50283/629c899b-fb63-4a30-8959-c4ea2f49b6f4.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/76e7c80e-f2f8-4313-807a-232e2a40af1c/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/76e7c80e-f2f8-4313-807a-232e2a40af1c/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/76e7c80e-f2f8-4313-807a-232e2a40af1c/731d8bf8-a8b9-4d0f-88b7-34c4beea38e1.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/76e7c80e-f2f8-4313-807a-232e2a40af1c/731d8bf8-a8b9-4d0f-88b7-34c4beea38e1.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/79b6d223-debb-4ab0-8076-0a53f9c03c3c/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/79b6d223-debb-4ab0-8076-0a53f9c03c3c/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/79b6d223-debb-4ab0-8076-0a53f9c03c3c/461bc8b3-555a-4c8b-aee3-807eb77492f0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/79b6d223-debb-4ab0-8076-0a53f9c03c3c/461bc8b3-555a-4c8b-aee3-807eb77492f0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/7b75b29f-4530-4e54-bab4-97e24b0739d1/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/7b75b29f-4530-4e54-bab4-97e24b0739d1/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/7b75b29f-4530-4e54-bab4-97e24b0739d1/09400fa0-1da4-4d3c-a67b-b3128151d637.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/7b75b29f-4530-4e54-bab4-97e24b0739d1/09400fa0-1da4-4d3c-a67b-b3128151d637.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/84c41321-b063-4699-bcc2-8b680b5944d9/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/84c41321-b063-4699-bcc2-8b680b5944d9/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/84c41321-b063-4699-bcc2-8b680b5944d9/e862a031-5549-483c-9f06-20d22fc37a9a.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/84c41321-b063-4699-bcc2-8b680b5944d9/e862a031-5549-483c-9f06-20d22fc37a9a.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/8a17d02c-f5a2-4a9f-8d28-bb2c76867983/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/8a17d02c-f5a2-4a9f-8d28-bb2c76867983/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/8a17d02c-f5a2-4a9f-8d28-bb2c76867983/d6418952-8b59-47ca-9f77-ebdebae9f76f.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/8a17d02c-f5a2-4a9f-8d28-bb2c76867983/d6418952-8b59-47ca-9f77-ebdebae9f76f.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/af3b1351-ca51-45f7-ad74-a7204b44c58b/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/af3b1351-ca51-45f7-ad74-a7204b44c58b/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/af3b1351-ca51-45f7-ad74-a7204b44c58b/c97b6c63-9305-417c-914c-1acf079c18aa.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/af3b1351-ca51-45f7-ad74-a7204b44c58b/c97b6c63-9305-417c-914c-1acf079c18aa.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/c82d25d7-82a0-45ff-922e-38890003e4f6/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/c82d25d7-82a0-45ff-922e-38890003e4f6/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/c82d25d7-82a0-45ff-922e-38890003e4f6/c12e8ff1-7cb0-4fb0-b207-8ec16f991ff7.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/c82d25d7-82a0-45ff-922e-38890003e4f6/c12e8ff1-7cb0-4fb0-b207-8ec16f991ff7.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/cac12a21-9dfc-4417-9218-4da96333c79c/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/cac12a21-9dfc-4417-9218-4da96333c79c/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/cac12a21-9dfc-4417-9218-4da96333c79c/cc475f24-99a1-4554-98e6-1be9498edcd1.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/cac12a21-9dfc-4417-9218-4da96333c79c/cc475f24-99a1-4554-98e6-1be9498edcd1.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/ead6c851-f12a-43b1-977d-2b9b60f99019/0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/ead6c851-f12a-43b1-977d-2b9b60f99019/0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/ead6c851-f12a-43b1-977d-2b9b60f99019/4bfee21e-83e6-4310-ac95-9a6ae83ea7bf.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/directpath/nexus-repository-docker/ead6c851-f12a-43b1-977d-2b9b60f99019/4bfee21e-83e6-4310-ac95-9a6ae83ea7bf.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-08/0a014169-5ace-4eaf-9d0a-57972dab7a6d.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-08/0a014169-5ace-4eaf-9d0a-57972dab7a6d.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-09/4e89bc53-e4e9-4d0c-a6f7-d47c6f81ceed.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-09/4e89bc53-e4e9-4d0c-a6f7-d47c6f81ceed.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-28/8f4d28f2-0892-40b3-ad6d-406130fa2ec8.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-01/chap-28/8f4d28f2-0892-40b3-ad6d-406130fa2ec8.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-03/5e46f4fc-f644-49aa-b820-a5859461e148.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-03/5e46f4fc-f644-49aa-b820-a5859461e148.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-09/02cce6cf-a223-42af-8b57-f1086932a9eb.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-09/02cce6cf-a223-42af-8b57-f1086932a9eb.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-23/33b618ab-c771-417b-b411-f1f6ad50de5c.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-02/chap-23/33b618ab-c771-417b-b411-f1f6ad50de5c.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-26/92b5cd00-8ea2-46ec-b3c0-eef7de24afd7.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-26/92b5cd00-8ea2-46ec-b3c0-eef7de24afd7.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-32/2090089e-d553-48ff-9587-519babf94790.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-32/2090089e-d553-48ff-9587-519babf94790.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-34/e6fc4362-81c0-4c0e-a31b-0b182a0d7c05.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-03/chap-34/e6fc4362-81c0-4c0e-a31b-0b182a0d7c05.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-04/chap-29/2f8b6341-4653-4d85-a47c-5c9ed600d71d.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-04/chap-29/2f8b6341-4653-4d85-a47c-5c9ed600d71d.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-07/chap-03/9d90ec0e-dc40-44c5-adb7-e51fc874b803.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-07/chap-03/9d90ec0e-dc40-44c5-adb7-e51fc874b803.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-04/a0670f2c-3c7a-42a7-8269-c993fe934f60.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-04/a0670f2c-3c7a-42a7-8269-c993fe934f60.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-14/206787e1-1010-48e0-86e8-a52cce605c62.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-14/206787e1-1010-48e0-86e8-a52cce605c62.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-22/5929697f-8568-4deb-ae14-6fc4ab715011.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-08/chap-22/5929697f-8568-4deb-ae14-6fc4ab715011.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-09/chap-30/98d6247f-b137-4024-bf1c-6a145ea4d075.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-09/chap-30/98d6247f-b137-4024-bf1c-6a145ea4d075.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-10/chap-11/16a26fdd-07d8-4456-9112-bd36279fa399.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-10/chap-11/16a26fdd-07d8-4456-9112-bd36279fa399.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-10/chap-37/ea06e861-50b3-42b2-b79f-57bbde45f492.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-10/chap-37/ea06e861-50b3-42b2-b79f-57bbde45f492.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-13/chap-16/967a7c74-fd43-48bd-ba71-6a122b01fba9.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-13/chap-16/967a7c74-fd43-48bd-ba71-6a122b01fba9.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-15/chap-46/f42db1e7-8fb1-4ecf-b894-0b2ec89575d8.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-15/chap-46/f42db1e7-8fb1-4ecf-b894-0b2ec89575d8.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-15/chap-47/dd5b43d9-64c2-4caf-91fa-e9d8e8c20ff5.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-15/chap-47/dd5b43d9-64c2-4caf-91fa-e9d8e8c20ff5.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-18/chap-17/5da8f372-0170-4f90-a02f-3bcaed1403ad.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-18/chap-17/5da8f372-0170-4f90-a02f-3bcaed1403ad.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-22/chap-05/614eb523-8ecd-424c-95a8-71b238de7136.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-22/chap-05/614eb523-8ecd-424c-95a8-71b238de7136.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-22/chap-34/b9741210-bba9-44dd-94d0-3cb513302969.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-22/chap-34/b9741210-bba9-44dd-94d0-3cb513302969.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-23/chap-23/63622979-2155-4c54-b119-fea41378e626.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-23/chap-23/63622979-2155-4c54-b119-fea41378e626.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-25/chap-02/93c98891-7b21-4c9b-962b-8dd6f0c21dfc.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-25/chap-02/93c98891-7b21-4c9b-962b-8dd6f0c21dfc.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-29/chap-34/8ad1c383-c64b-45a6-bb89-92c7197540a5.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-29/chap-34/8ad1c383-c64b-45a6-bb89-92c7197540a5.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-31/chap-19/d8ed16d8-9ce9-4054-bdd9-fc12ed0d0a65.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-31/chap-19/d8ed16d8-9ce9-4054-bdd9-fc12ed0d0a65.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-02/91324564-6857-4813-9ea8-af924753cea0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-02/91324564-6857-4813-9ea8-af924753cea0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-12/18fa7d9a-d488-4d1a-a0eb-598ec6e2ce1f.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-12/18fa7d9a-d488-4d1a-a0eb-598ec6e2ce1f.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-16/617c0b3d-c51a-407a-969d-1a8b57a3a097.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-33/chap-16/617c0b3d-c51a-407a-969d-1a8b57a3a097.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-05/1a37767e-9a5d-49c3-94b9-c279d0033570.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-05/1a37767e-9a5d-49c3-94b9-c279d0033570.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-12/cf4ee220-9ca7-46b2-8acb-4994958198e0.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-12/cf4ee220-9ca7-46b2-8acb-4994958198e0.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-16/07c46b5f-63c8-405f-a476-8a5b5dfd8730.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-35/chap-16/07c46b5f-63c8-405f-a476-8a5b5dfd8730.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-36/chap-42/cd76b229-2856-4e6d-890a-ac562d8a7440.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-36/chap-42/cd76b229-2856-4e6d-890a-ac562d8a7440.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-07/45160103-1e58-4884-aa78-750a94131e64.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-07/45160103-1e58-4884-aa78-750a94131e64.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-24/3b192872-4573-4bc9-a9b7-b19ef08ff1c6.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-24/3b192872-4573-4bc9-a9b7-b19ef08ff1c6.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-43/cc36083d-897c-4f67-846a-8063ec74bad2.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-37/chap-43/cc36083d-897c-4f67-846a-8063ec74bad2.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-38/chap-39/b26a8a58-9491-4dc1-b680-2c5f0d8d1999.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-38/chap-39/b26a8a58-9491-4dc1-b680-2c5f0d8d1999.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-39/chap-44/5ca6f016-e22a-462b-9068-e2c397f53c7c.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-39/chap-44/5ca6f016-e22a-462b-9068-e2c397f53c7c.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-41/chap-32/8d99bbe2-f863-4118-bbd5-fd27ec8ea476.bytes
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/content/vol-41/chap-32/8d99bbe2-f863-4118-bbd5-fd27ec8ea476.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/metadata.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/blobs/default/reconciliation/2026-09-30
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OFunction.name.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OFunction.name.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OFunction.name.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OFunction.name.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ORole.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ORole.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OSystem.4.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OSystem.5.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OSystem.wmr
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OUser.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/OUser.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/cache.stt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/command-cache.json
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/database.ocf
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/default.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/default.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/dictionary.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/dictionary.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/dirty.fl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/e.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/e.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/internal.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/internal.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/manindex.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/manindex.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/name_id_map.cm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ofunction.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ofunction.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/orole.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/orole.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/oschedule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/oschedule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/osequence.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/osequence.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ouser.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/ouser.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/v.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/OSystem/v.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OFunction.name.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OFunction.name.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OFunction.name.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OFunction.name.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ORole.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ORole.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OUser.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/OUser.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_metric_name_period_type_metric_date_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/aggregated_metric_metric_name_period_type_metric_date_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/analytics.8.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/analytics.wmr
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/cache.stt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/command-cache.json
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/database.ocf
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/default.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/default.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/dictionary.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/dictionary.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/dirty.fl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/e_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_login_date_username_realm_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_login_date_username_realm_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/historical_login_info_login_date_username_realm_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/internal.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/internal.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/manindex.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/manindex.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_metric_name_timestamp_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_metric_name_timestamp_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/metrics_log_metric_name_timestamp_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/name_id_map.cm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ofunction.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ofunction.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/orole.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/orole.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/oschedule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/oschedule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/osequence.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/osequence.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ouser.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/ouser.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/analytics/v_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OFunction.name.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OFunction.name.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OFunction.name.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OFunction.name.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ORole.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ORole.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OUser.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/OUser.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_component_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_component_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_name_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_rid_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_bucket_rid_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_component_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_component_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_component_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_name_ci_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_name_ci_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/asset_name_ci_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_asset_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_component_id_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_component_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_repository_name_parent_path_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/browse_node_repository_name_parent_path_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_repository_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/bucket_repository_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/cache.stt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/command-cache.json
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component.25.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component.wmr
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_bucket_group_name_version_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_bucket_group_name_version_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_bucket_name_version_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_bucket_name_version_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_bucket_name_version_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_ci_name_ci_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_ci_name_ci_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_ci_name_ci_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_group_name_version_ci_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_group_name_version_ci_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/component_group_name_version_ci_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_ip_address_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_ip_address_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_repository_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_repository_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_username_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_namespace_name_version_username_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_repository_name_namespace_name_version_date_ip_address_username_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/coordinate_download_count_repository_name_namespace_name_version_date_ip_address_username_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/database.ocf
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/default.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/default.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_blobstore_blob_id_idx.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_blobstore_blob_id_idx.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_blobstore_blob_id_idx.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/deleted_blob_index_blobstore_blob_id_idx.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/dictionary.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/dictionary.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/dirty.fl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_digest_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/docker_foreign_layers_digest_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/e_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/internal.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/internal.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/manindex.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/manindex.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/name_id_map.cm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/number_of_proxy_downloads_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ofunction.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ofunction.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/orole.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/orole.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/oschedule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/oschedule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/osequence.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/osequence.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ouser.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/ouser.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_node_id_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/statushealthcheck_node_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/component/v_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OFunction.name.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OFunction.name.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OFunction.name.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OFunction.name.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ORole.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ORole.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OUser.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/OUser.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cache.stt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/capability_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_format_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_format_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/cleanup_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/command-cache.json
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/config.22.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/config.wmr
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/database.ocf
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/default.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/default.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/deploymentidentifier.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/deploymentidentifier.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/dictionary.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/dictionary.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/dirty.fl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/e_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/email.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/email.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/firewall_ignore_patterns.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/firewall_ignore_patterns.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_property_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/healthcheckconfig_property_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/http_client.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/http_client.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/internal.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/internal.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/key_store_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_connection_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_host_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_id_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_mapping_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ldap_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/log4j_visualizer.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/log4j_visualizer.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/manindex.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/manindex.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/name_id_map.cm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ofunction.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ofunction.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/orole.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/orole.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/oschedule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/oschedule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/osequence.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/osequence.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ouser.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/ouser.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_calendar_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_name_group_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_job_detail_name_group_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_calendar_name_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_calendar_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_calendar_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_job_name_job_group_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_job_name_job_group_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_job_name_job_group_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_name_group_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_name_group_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_state_idx.irs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_state_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/quartz_trigger_state_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_blobstore_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_repository_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_repository_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/repository_routingrule_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/script_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/selector_selector_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/upgrade_model_versions.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/upgrade_model_versions.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/config/v_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/frozen.marker
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/model.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OFunction.name.hib
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OFunction.name.him
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OFunction.name.hit
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OFunction.name.hnb
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ORole.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ORole.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OUser.name.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/OUser.name.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/anonymous.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/anonymous.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_domain_api_key_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_domain_api_key_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_domain_primary_principal_principals_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/api_key_domain_primary_principal_principals_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/cache.stt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/command-cache.json
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/database.ocf
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/default.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/default.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/dictionary.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/dictionary.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/dirty.fl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/e_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/index.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/index.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/internal.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/internal.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/manindex.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/manindex.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/name_id_map.cm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ofunction.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ofunction.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/orole.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/orole.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/oschedule.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/oschedule.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/osequence.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/osequence.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ouser.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/ouser.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_id_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_name_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/privilege_name_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/realm.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/realm.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_id_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/role_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/security.12.wal
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/security.wmr
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_id_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_id_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_userid_source_idx.nbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/user_role_mapping_userid_source_idx.sbt
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_1.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_1.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_2.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_2.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_3.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_3.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_4.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_4.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_5.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_5.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_6.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_6.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_7.cpm
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/db/security/v_7.pcl
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus.lsn
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/_state/global-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/index/segments_4
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/translog/translog-1.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/translog/translog-1.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/2e9a1e67e8a325bcd6ee9f6790ff6c769e791d56/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/_1.cfe
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/_1.cfs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/_1.si
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/_1_1.liv
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/segments_6
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/translog/translog-2.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/translog/translog-3.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/3d781e8165513bfe7db3d7eaab3991b9ebec763b/_state/state-2.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/index/segments_4
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/translog/translog-1.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/translog/translog-1.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/51196dce51055df9247e1973e443b68c84549dd9/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/index/segments_4
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/translog/translog-1.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/translog/translog-1.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/73ae44bc066b6a7a33b4435641d8229b9b66495a/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_0.cfe
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_0.cfs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_0.si
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_1.cfe
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_1.cfs
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/_1.si
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/segments_6
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/translog/translog-2.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/translog/translog-3.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/9761c2d890ea7172287581c94f521c246a182e44/_state/state-2.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/index/segments_4
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/index/write.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/translog/translog-1.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/translog/translog-1.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/translog/translog-2.tlog
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/0/translog/translog.ckp
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/indices/b2b9b8f06274052a44b61ef3c7e887f0961d99c6/_state/state-1.st
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/elasticsearch/nexus/nodes/0/node.lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/etc/nexus.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/instances/instance.properties
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/karaf.pid
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/keystores/node/private.ks
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/keystores/node/trusted.ks
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/lock
+ create mode 100644 codigo_base/infra/nexus_config/nexus_data/port
+[?2004h]0;ingesoft@205m11: ~/Desktop/A00404257/codigo_base[01;32mingesoft@205m11[00m:[01;34m~/Desktop/A00404257/codigo_base[00m$ git push
+[?2004lEnumerating objects: 918, done.
+Counting objects:   0% (1/918)Counting objects:   1% (10/918)Counting objects:   2% (19/918)Counting objects:   3% (28/918)Counting objects:   4% (37/918)Counting objects:   5% (46/918)Counting objects:   6% (56/918)Counting objects:   7% (65/918)Counting objects:   8% (74/918)Counting objects:   9% (83/918)Counting objects:  10% (92/918)Counting objects:  11% (101/918)Counting objects:  12% (111/918)Counting objects:  13% (120/918)Counting objects:  14% (129/918)Counting objects:  15% (138/918)Counting objects:  16% (147/918)Counting objects:  17% (157/918)Counting objects:  18% (166/918)Counting objects:  19% (175/918)Counting objects:  20% (184/918)Counting objects:  21% (193/918)Counting objects:  22% (202/918)Counting objects:  23% (212/918)Counting objects:  24% (221/918)Counting objects:  25% (230/918)Counting objects:  26% (239/918)Counting objects:  27% (248/918)Counting objects:  28% (258/918)Counting objects:  29% (267/918)Counting objects:  30% (276/918)Counting objects:  31% (285/918)Counting objects:  32% (294/918)Counting objects:  33% (303/918)Counting objects:  34% (313/918)Counting objects:  35% (322/918)Counting objects:  36% (331/918)Counting objects:  37% (340/918)Counting objects:  38% (349/918)Counting objects:  39% (359/918)Counting objects:  40% (368/918)Counting objects:  41% (377/918)Counting objects:  42% (386/918)Counting objects:  43% (395/918)Counting objects:  44% (404/918)Counting objects:  45% (414/918)Counting objects:  46% (423/918)Counting objects:  47% (432/918)Counting objects:  48% (441/918)Counting objects:  49% (450/918)Counting objects:  50% (459/918)Counting objects:  51% (469/918)Counting objects:  52% (478/918)Counting objects:  53% (487/918)Counting objects:  54% (496/918)Counting objects:  55% (505/918)Counting objects:  56% (515/918)Counting objects:  57% (524/918)Counting objects:  58% (533/918)Counting objects:  59% (542/918)Counting objects:  60% (551/918)Counting objects:  61% (560/918)Counting objects:  62% (570/918)Counting objects:  63% (579/918)Counting objects:  64% (588/918)Counting objects:  65% (597/918)Counting objects:  66% (606/918)Counting objects:  67% (616/918)Counting objects:  68% (625/918)Counting objects:  69% (634/918)Counting objects:  70% (643/918)Counting objects:  71% (652/918)Counting objects:  72% (661/918)Counting objects:  73% (671/918)Counting objects:  74% (680/918)Counting objects:  75% (689/918)Counting objects:  76% (698/918)Counting objects:  77% (707/918)Counting objects:  78% (717/918)Counting objects:  79% (726/918)Counting objects:  80% (735/918)Counting objects:  81% (744/918)Counting objects:  82% (753/918)Counting objects:  83% (762/918)Counting objects:  84% (772/918)Counting objects:  85% (781/918)Counting objects:  86% (790/918)Counting objects:  87% (799/918)Counting objects:  88% (808/918)Counting objects:  89% (818/918)Counting objects:  90% (827/918)Counting objects:  91% (836/918)Counting objects:  92% (845/918)Counting objects:  93% (854/918)Counting objects:  94% (863/918)Counting objects:  95% (873/918)Counting objects:  96% (882/918)Counting objects:  97% (891/918)Counting objects:  98% (900/918)Counting objects:  99% (909/918)Counting objects: 100% (918/918)Counting objects: 100% (918/918), done.
+Delta compression using up to 8 threads
+Compressing objects:   0% (1/828)Compressing objects:   1% (9/828)Compressing objects:   2% (17/828)Compressing objects:   3% (25/828)Compressing objects:   4% (34/828)Compressing objects:   5% (42/828)Compressing objects:   6% (50/828)Compressing objects:   7% (58/828)Compressing objects:   8% (67/828)Compressing objects:   9% (75/828)Compressing objects:  10% (83/828)Compressing objects:  11% (92/828)Compressing objects:  12% (100/828)Compressing objects:  13% (108/828)Compressing objects:  14% (116/828)Compressing objects:  15% (125/828)Compressing objects:  16% (133/828)Compressing objects:  17% (141/828)Compressing objects:  18% (150/828)Compressing objects:  19% (158/828)Compressing objects:  20% (166/828)Compressing objects:  21% (174/828)Compressing objects:  22% (183/828)Compressing objects:  23% (191/828)Compressing objects:  24% (199/828)Compressing objects:  25% (207/828)Compressing objects:  26% (216/828)Compressing objects:  27% (224/828)Compressing objects:  28% (232/828)Compressing objects:  29% (241/828)Compressing objects:  30% (249/828)Compressing objects:  31% (257/828)Compressing objects:  32% (265/828)Compressing objects:  33% (274/828)Compressing objects:  34% (282/828)Compressing objects:  35% (290/828)Compressing objects:  36% (299/828)Compressing objects:  37% (307/828)Compressing objects:  38% (315/828)Compressing objects:  39% (323/828)Compressing objects:  40% (332/828)Compressing objects:  41% (340/828)Compressing objects:  42% (348/828)Compressing objects:  43% (357/828)Compressing objects:  44% (365/828)Compressing objects:  45% (373/828)Compressing objects:  46% (381/828)Compressing objects:  47% (390/828)Compressing objects:  48% (398/828)Compressing objects:  49% (406/828)Compressing objects:  50% (414/828)Compressing objects:  51% (423/828)Compressing objects:  52% (431/828)Compressing objects:  53% (439/828)Compressing objects:  54% (448/828)Compressing objects:  55% (456/828)Compressing objects:  56% (464/828)Compressing objects:  57% (472/828)Compressing objects:  58% (481/828)Compressing objects:  59% (489/828)Compressing objects:  60% (497/828)Compressing objects:  61% (506/828)Compressing objects:  62% (514/828)Compressing objects:  63% (522/828)Compressing objects:  64% (530/828)Compressing objects:  65% (539/828)Compressing objects:  66% (547/828)Compressing objects:  67% (555/828)Compressing objects:  68% (564/828)Compressing objects:  69% (572/828)Compressing objects:  70% (580/828)Compressing objects:  71% (588/828)Compressing objects:  72% (597/828)Compressing objects:  73% (605/828)Compressing objects:  74% (613/828)Compressing objects:  75% (621/828)Compressing objects:  76% (630/828)Compressing objects:  77% (638/828)Compressing objects:  78% (646/828)Compressing objects:  79% (655/828)Compressing objects:  80% (663/828)Compressing objects:  81% (671/828)Compressing objects:  82% (679/828)Compressing objects:  83% (688/828)Compressing objects:  84% (696/828)Compressing objects:  85% (704/828)Compressing objects:  86% (713/828)Compressing objects:  87% (721/828)Compressing objects:  88% (729/828)Compressing objects:  89% (737/828)Compressing objects:  90% (746/828)Compressing objects:  91% (754/828)Compressing objects:  92% (762/828)Compressing objects:  93% (771/828)Compressing objects:  94% (779/828)Compressing objects:  95% (787/828)Compressing objects:  96% (795/828)Compressing objects:  97% (804/828)Compressing objects:  97% (809/828)Compressing objects:  97% (811/828)Compressing objects:  98% (812/828)Compressing objects:  98% (817/828)Compressing objects:  99% (820/828)Compressing objects:  99% (826/828)Compressing objects: 100% (828/828)Compressing objects: 100% (828/828), done.
+Writing objects:   0% (1/900)Writing objects:   1% (9/900)Writing objects:   2% (18/900)Writing objects:   3% (27/900)Writing objects:   4% (36/900)Writing objects:   5% (45/900)Writing objects:   6% (54/900)Writing objects:   7% (63/900)Writing objects:   8% (76/900)Writing objects:   9% (81/900)Writing objects:  10% (90/900), 1.05 MiB | 1.37 MiB/sWriting objects:  11% (99/900), 1.05 MiB | 1.37 MiB/sWriting objects:  12% (108/900), 1.05 MiB | 1.37 MiB/sWriting objects:  12% (109/900), 2.59 MiB | 1.67 MiB/sWriting objects:  12% (109/900), 17.02 MiB | 8.34 MiB/sWriting objects:  12% (112/900), 18.58 MiB | 5.66 MiB/sWriting objects:  12% (112/900), 44.72 MiB | 10.44 MiB/sWriting objects:  13% (117/900), 44.72 MiB | 10.44 MiB/sWriting objects:  13% (125/900), 60.10 MiB | 9.70 MiB/s Writing objects:  13% (125/900), 84.11 MiB | 11.68 MiB/sWriting objects:  14% (126/900), 99.87 MiB | 14.25 MiB/sWriting objects:  14% (132/900), 104.19 MiB | 14.51 MiB/sWriting objects:  14% (132/900), 118.77 MiB | 14.53 MiB/sWriting objects:  15% (135/900), 118.77 MiB | 14.53 MiB/sWriting objects:  16% (144/900), 126.48 MiB | 17.14 MiB/sWriting objects:  17% (153/900), 126.48 MiB | 17.14 MiB/sWriting objects:  18% (162/900), 126.48 MiB | 17.14 MiB/sWriting objects:  19% (171/900), 126.48 MiB | 17.14 MiB/sWriting objects:  20% (180/900), 126.48 MiB | 17.14 MiB/sWriting objects:  21% (189/900), 126.48 MiB | 17.14 MiB/sWriting objects:  22% (199/900), 126.48 MiB | 17.14 MiB/sWriting objects:  23% (207/900), 126.48 MiB | 17.14 MiB/sWriting objects:  24% (216/900), 126.48 MiB | 17.14 MiB/sWriting objects:  25% (225/900), 126.48 MiB | 17.14 MiB/sWriting objects:  26% (234/900), 126.48 MiB | 17.14 MiB/sWriting objects:  27% (243/900), 126.48 MiB | 17.14 MiB/sWriting objects:  27% (245/900), 127.44 MiB | 13.46 MiB/sWriting objects:  27% (245/900), 151.59 MiB | 15.57 MiB/sWriting objects:  28% (252/900), 167.38 MiB | 16.82 MiB/sWriting objects:  29% (261/900), 167.38 MiB | 16.82 MiB/sWriting objects:  30% (270/900), 167.38 MiB | 16.82 MiB/sWriting objects:  31% (279/900), 167.38 MiB | 16.82 MiB/sWriting objects:  32% (288/900), 167.38 MiB | 16.82 MiB/sWriting objects:  33% (297/900), 167.38 MiB | 16.82 MiB/sWriting objects:  34% (306/900), 167.38 MiB | 16.82 MiB/sWriting objects:  35% (315/900), 167.38 MiB | 16.82 MiB/sWriting objects:  36% (325/900), 167.38 MiB | 16.82 MiB/sWriting objects:  37% (333/900), 167.38 MiB | 16.82 MiB/sWriting objects:  38% (342/900), 167.38 MiB | 16.82 MiB/sWriting objects:  39% (351/900), 167.38 MiB | 16.82 MiB/sWriting objects:  40% (360/900), 167.38 MiB | 16.82 MiB/sWriting objects:  41% (369/900), 167.38 MiB | 16.82 MiB/sWriting objects:  42% (378/900), 167.38 MiB | 16.82 MiB/sWriting objects:  43% (387/900), 167.38 MiB | 16.82 MiB/sWriting objects:  44% (396/900), 167.38 MiB | 16.82 MiB/sWriting objects:  45% (405/900), 167.38 MiB | 16.82 MiB/sWriting objects:  46% (414/900), 167.38 MiB | 16.82 MiB/sWriting objects:  47% (423/900), 167.38 MiB | 16.82 MiB/sWriting objects:  48% (432/900), 167.38 MiB | 16.82 MiB/sWriting objects:  49% (441/900), 167.38 MiB | 16.82 MiB/sWriting objects:  50% (450/900), 167.38 MiB | 16.82 MiB/sWriting objects:  51% (459/900), 167.38 MiB | 16.82 MiB/sWriting objects:  52% (468/900), 167.38 MiB | 16.82 MiB/sWriting objects:  53% (477/900), 167.38 MiB | 16.82 MiB/sWriting objects:  54% (486/900), 167.38 MiB | 16.82 MiB/sWriting objects:  55% (495/900), 167.38 MiB | 16.82 MiB/sWriting objects:  56% (504/900), 167.38 MiB | 16.82 MiB/sWriting objects:  57% (513/900), 167.38 MiB | 16.82 MiB/sWriting objects:  58% (522/900), 167.38 MiB | 16.82 MiB/sWriting objects:  59% (531/900), 167.38 MiB | 16.82 MiB/sWriting objects:  60% (540/900), 167.38 MiB | 16.82 MiB/sWriting objects:  61% (549/900), 167.38 MiB | 16.82 MiB/sWriting objects:  62% (558/900), 167.38 MiB | 16.82 MiB/sWriting objects:  63% (567/900), 167.38 MiB | 16.82 MiB/sWriting objects:  64% (577/900), 167.38 MiB | 16.82 MiB/sWriting objects:  65% (585/900), 167.38 MiB | 16.82 MiB/sWriting objects:  66% (594/900), 167.38 MiB | 16.82 MiB/sWriting objects:  67% (603/900), 167.38 MiB | 16.82 MiB/sWriting objects:  68% (612/900), 167.38 MiB | 16.82 MiB/sWriting objects:  69% (621/900), 167.38 MiB | 16.82 MiB/sWriting objects:  70% (630/900), 167.38 MiB | 16.82 MiB/sWriting objects:  71% (639/900), 167.38 MiB | 16.82 MiB/sWriting objects:  72% (648/900), 167.38 MiB | 16.82 MiB/sWriting objects:  73% (657/900), 167.38 MiB | 16.82 MiB/sWriting objects:  74% (666/900), 167.38 MiB | 16.82 MiB/sWriting objects:  75% (675/900), 167.38 MiB | 16.82 MiB/sWriting objects:  76% (684/900), 167.38 MiB | 16.82 MiB/sWriting objects:  77% (693/900), 167.38 MiB | 16.82 MiB/sWriting objects:  78% (702/900), 167.38 MiB | 16.82 MiB/sWriting objects:  79% (711/900), 167.38 MiB | 16.82 MiB/sWriting objects:  80% (720/900), 167.38 MiB | 16.82 MiB/sWriting objects:  81% (729/900), 167.38 MiB | 16.82 MiB/sWriting objects:  82% (738/900), 167.38 MiB | 16.82 MiB/sWriting objects:  83% (747/900), 167.38 MiB | 16.82 MiB/sWriting objects:  84% (756/900), 167.38 MiB | 16.82 MiB/sWriting objects:  85% (765/900), 167.38 MiB | 16.82 MiB/sWriting objects:  86% (774/900), 167.38 MiB | 16.82 MiB/sWriting objects:  87% (783/900), 167.38 MiB | 16.82 MiB/sWriting objects:  88% (792/900), 167.38 MiB | 16.82 MiB/sWriting objects:  89% (801/900), 167.38 MiB | 16.82 MiB/sWriting objects:  90% (810/900), 167.38 MiB | 16.82 MiB/sWriting objects:  91% (819/900), 167.38 MiB | 16.82 MiB/sWriting objects:  92% (828/900), 167.38 MiB | 16.82 MiB/sWriting objects:  93% (837/900), 167.38 MiB | 16.82 MiB/sWriting objects:  94% (846/900), 167.38 MiB | 16.82 MiB/sWriting objects:  95% (855/900), 167.38 MiB | 16.82 MiB/sWriting objects:  96% (864/900), 167.38 MiB | 16.82 MiB/sWriting objects:  97% (873/900), 167.38 MiB | 16.82 MiB/sWriting objects:  98% (882/900), 167.38 MiB | 16.82 MiB/sWriting objects:  99% (891/900), 167.38 MiB | 16.82 MiB/sWriting objects: 100% (900/900), 167.38 MiB | 16.82 MiB/sWriting objects: 100% (900/900), 169.20 MiB | 13.04 MiB/s, done.
+Total 900 (delta 563), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/563)[Kremote: Resolving deltas:   1% (6/563)[Kremote: Resolving deltas:   2% (12/563)[Kremote: Resolving deltas:   3% (17/563)[Kremote: Resolving deltas:   4% (23/563)[Kremote: Resolving deltas:   5% (29/563)[Kremote: Resolving deltas:   6% (34/563)[Kremote: Resolving deltas:   7% (40/563)[Kremote: Resolving deltas:   8% (46/563)[Kremote: Resolving deltas:   9% (51/563)[Kremote: Resolving deltas:  10% (57/563)[Kremote: Resolving deltas:  11% (62/563)[Kremote: Resolving deltas:  12% (68/563)[Kremote: Resolving deltas:  13% (74/563)[Kremote: Resolving deltas:  14% (79/563)[Kremote: Resolving deltas:  15% (85/563)[Kremote: Resolving deltas:  16% (91/563)[Kremote: Resolving deltas:  17% (96/563)[Kremote: Resolving deltas:  18% (102/563)[Kremote: Resolving deltas:  19% (107/563)[Kremote: Resolving deltas:  20% (113/563)[Kremote: Resolving deltas:  21% (119/563)[Kremote: Resolving deltas:  22% (124/563)[Kremote: Resolving deltas:  23% (130/563)[Kremote: Resolving deltas:  24% (136/563)[Kremote: Resolving deltas:  25% (141/563)[Kremote: Resolving deltas:  26% (147/563)[Kremote: Resolving deltas:  27% (153/563)[Kremote: Resolving deltas:  28% (158/563)[Kremote: Resolving deltas:  29% (164/563)[Kremote: Resolving deltas:  30% (169/563)[Kremote: Resolving deltas:  31% (175/563)[Kremote: Resolving deltas:  32% (181/563)[Kremote: Resolving deltas:  33% (186/563)[Kremote: Resolving deltas:  34% (192/563)[Kremote: Resolving deltas:  35% (198/563)[Kremote: Resolving deltas:  36% (203/563)[Kremote: Resolving deltas:  37% (209/563)[Kremote: Resolving deltas:  38% (214/563)[Kremote: Resolving deltas:  39% (220/563)[Kremote: Resolving deltas:  40% (226/563)[Kremote: Resolving deltas:  41% (231/563)[Kremote: Resolving deltas:  42% (237/563)[Kremote: Resolving deltas:  43% (243/563)[Kremote: Resolving deltas:  44% (248/563)[Kremote: Resolving deltas:  45% (254/563)[Kremote: Resolving deltas:  46% (259/563)[Kremote: Resolving deltas:  47% (265/563)[Kremote: Resolving deltas:  48% (271/563)[Kremote: Resolving deltas:  49% (276/563)[Kremote: Resolving deltas:  50% (282/563)[Kremote: Resolving deltas:  51% (288/563)[Kremote: Resolving deltas:  52% (293/563)[Kremote: Resolving deltas:  53% (299/563)[Kremote: Resolving deltas:  54% (305/563)[Kremote: Resolving deltas:  55% (310/563)[Kremote: Resolving deltas:  56% (316/563)[Kremote: Resolving deltas:  57% (321/563)[Kremote: Resolving deltas:  58% (327/563)[Kremote: Resolving deltas:  59% (333/563)[Kremote: Resolving deltas:  60% (338/563)[Kremote: Resolving deltas:  61% (344/563)[Kremote: Resolving deltas:  62% (350/563)[Kremote: Resolving deltas:  63% (355/563)[Kremote: Resolving deltas:  64% (361/563)[Kremote: Resolving deltas:  65% (366/563)[Kremote: Resolving deltas:  66% (372/563)[Kremote: Resolving deltas:  67% (378/563)[Kremote: Resolving deltas:  68% (383/563)[Kremote: Resolving deltas:  69% (389/563)[Kremote: Resolving deltas:  70% (395/563)[Kremote: Resolving deltas:  71% (400/563)[Kremote: Resolving deltas:  72% (406/563)[Kremote: Resolving deltas:  73% (411/563)[Kremote: Resolving deltas:  74% (417/563)[Kremote: Resolving deltas:  75% (423/563)[Kremote: Resolving deltas:  76% (428/563)[Kremote: Resolving deltas:  77% (434/563)[Kremote: Resolving deltas:  78% (440/563)[Kremote: Resolving deltas:  79% (445/563)[Kremote: Resolving deltas:  80% (451/563)[Kremote: Resolving deltas:  81% (457/563)[Kremote: Resolving deltas:  82% (462/563)[Kremote: Resolving deltas:  83% (468/563)[Kremote: Resolving deltas:  84% (473/563)[Kremote: Resolving deltas:  85% (479/563)[Kremote: Resolving deltas:  86% (485/563)[Kremote: Resolving deltas:  87% (490/563)[Kremote: Resolving deltas:  88% (496/563)[Kremote: Resolving deltas:  89% (502/563)[Kremote: Resolving deltas:  90% (507/563)[Kremote: Resolving deltas:  91% (513/563)[Kremote: Resolving deltas:  92% (518/563)[Kremote: Resolving deltas:  93% (524/563)[Kremote: Resolving deltas:  94% (530/563)[Kremote: Resolving deltas:  95% (535/563)[Kremote: Resolving deltas:  96% (541/563)[Kremote: Resolving deltas:  97% (547/563)[Kremote: Resolvi
