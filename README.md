@@ -1,3 +1,7 @@
+EVIDENCIA
+
+https://docs.google.com/document/d/155c9ArIA6bH5OyCfnbk67lhWeqeYhNPdl8-t_38uZ6E/edit?tab=t.0
+
 # StudyTrack — Código Base (Taller Evaluativo 2)
 
 Ingeniería de Software V · Universidad Icesi · Período 202620
