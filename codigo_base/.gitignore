@@ -1,0 +1,19 @@
+# Jenkins
+infra/jenkins_config/jenkins_home/secrets/
+infra/jenkins_config/jenkins_home/.java/
+infra/jenkins_config/jenkins_home/workspace/
+infra/jenkins_config/jenkins_home/plugins/
+infra/jenkins_config/jenkins_home/war/
+infra/jenkins_config/jenkins_home/caches/
+infra/jenkins_config/jenkins_home/.m2/
+
+# Nexus
+infra/nexus_config/nexus_data/log/
+infra/nexus_config/nexus_data/tmp/
+infra/nexus_config/nexus_data/cache/
+
+# Builds locales y variables
+**/.env
+frontend/node_modules/
+frontend/dist/
+backend/target/

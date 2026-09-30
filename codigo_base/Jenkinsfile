@@ -1,41 +1,32 @@
-// =============================================================================
-// Taller Evaluativo 2 - Fase 4: Pipeline Declarativo en Jenkins
-//
-// Complete los TODOs de cada etapa. Recuerde:
-//   - Prohibido el tag ":latest" al publicar en Nexus (empaquetamiento
-//     inmutable, Fase 2).
-//   - Las credenciales (usuario/clave de Nexus, token de GitHub) se
-//     inyectan mediante los IDs configurados en Jenkins > Credentials,
-//     NUNCA en texto plano dentro de este archivo.
-// =============================================================================
-
 pipeline {
     agent any
 
     environment {
-        // TODO
-        IMAGE_TAG = "TODO-DEFINA-EN-UN-STAGE-SCRIPT"
+        REGISTRY    = 'localhost:9080'          // registry visto por el Docker del host
+        NEXUS_URL   = 'http://nexus:8081'       // Nexus visto desde cicd_network
+        NEXUS_CREDS = credentials('nexus-credentials')
+    }
 
-        // TODO
-        NEXUS_REGISTRY   = "TODO-HOST:TODO-PUERTO-DOCKER-REGISTRY"
-        NEXUS_MAVEN_REPO = "TODO-URL-REPOSITORIO-MAVEN-RELEASES"
-
-        // TODO
-        NEXUS_CREDENTIALS_ID = "TODO-ID-CREDENCIAL-NEXUS"
+    triggers {
+        githubPush()
     }
 
     stages {
-
         stage('Checkout & Test') {
             steps {
                 checkout scm
-
                 script {
-                    // TODO:
+                    def sha = sh(script: 'git rev-parse --short=7 HEAD', returnStdout: true).trim()
+                    env.VERSION = "1.0.${env.BUILD_NUMBER}-${sha}"
+                    echo "Versión inmutable: ${env.VERSION}"
                 }
-
                 dir('backend') {
-                    // TODO
+                    sh 'mvn -B test'
+                }
+            }
+            post {
+                always {
+                    junit 'backend/target/surefire-reports/*.xml'
                 }
             }
         }
@@ -43,33 +34,50 @@ pipeline {
         stage('Package & Tag Inmutable') {
             steps {
                 dir('backend') {
-                    // TODO
+                    sh 'mvn -B package -DskipTests -Drevision=$VERSION'
+                    sh 'docker build -t $REGISTRY/studytrack-api:$VERSION .'
                 }
                 dir('frontend') {
-                    // TODO:
+                    sh 'docker build --build-arg VITE_API_URL=http://localhost:8080 -t $REGISTRY/studytrack-frontend:$VERSION .'
                 }
             }
         }
 
         stage('Publish to Nexus') {
             steps {
-                // TODO
+                writeFile file: 'ci-settings.xml', text: '''<settings>
+  <servers>
+    <server>
+      <id>nexus-releases</id>
+      <username>${env.NEXUS_CREDS_USR}</username>
+      <password>${env.NEXUS_CREDS_PSW}</password>
+    </server>
+  </servers>
+</settings>'''
+                dir('backend') {
+                    sh 'mvn -B deploy -DskipTests -Drevision=$VERSION -Dnexus.url=$NEXUS_URL -s ../ci-settings.xml'
+                }
+                sh '''
+                    echo "$NEXUS_CREDS_PSW" | docker login $REGISTRY -u "$NEXUS_CREDS_USR" --password-stdin
+                    docker push $REGISTRY/studytrack-api:$VERSION
+                    docker push $REGISTRY/studytrack-frontend:$VERSION
+                '''
             }
         }
 
         stage('Deploy & Smoke Test') {
             steps {
-                // TODO
+                sh 'IMAGE_TAG=$VERSION docker compose -f deploy/docker-compose.yml up -d'
+                sh '''
+                    for i in $(seq 1 20); do
+                        if curl -fs http://studytrack-api:8080/api/tasks; then
+                            echo "Smoke test OK"; exit 0
+                        fi
+                        echo "Intento $i fallido, reintentando en 5s..."; sleep 5
+                    done
+                    echo "Smoke test FALLÓ"; exit 1
+                '''
             }
-        }
-    }
-
-    post {
-        success {
-            echo "Pipeline finalizado en verde. Artefactos publicados con tag: ${env.IMAGE_TAG}"
-        }
-        failure {
-            echo "El pipeline falló. Revise los logs de la etapa correspondiente antes de reintentar."
         }
     }
 }
