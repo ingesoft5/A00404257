@@ -3,12 +3,17 @@
   <timestamp>2026-09-30 14:00:34.966 UTC</timestamp>
   <md5sum>d7a49289a3df8cc74950a5dd2d2c8919</md5sum>
   <fileName>Credential id=github-credentials name=Giuseppe1r/******</fileName>
-  <usages/>
+  <usages>
+    <entry>
+      <string>tudytrack-pipeline</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1511.v2e3cb_0008ef0">
-      <timestamp>1790777284821</timestamp>
+      <timestamp>1790777520640</timestamp>
       <itemFullName>tudytrack-pipeline</itemFullName>
-      <timestamp0>1790776834951</timestamp0>
+      <timestamp0>1790777284821</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
   </facets>
 </fingerprint>
