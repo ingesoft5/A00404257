@@ -381,11 +381,12 @@
   <queueId>3</queueId>
   <timestamp>1790777520501</timestamp>
   <startTime>1790777520635</startTime>
-  <duration>0</duration>
+  <result>FAILURE</result>
+  <duration>430156260</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
-    <result>SUCCESS</result>
+    <result>FAILURE</result>
     <script>pipeline {
     agent any
 
@@ -470,15 +471,16 @@
     }
 }</script>
     <loadedScripts class="linked-hash-map"/>
+    <persistedClean>true</persistedClean>
     <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>996385712</long>
+        <long>1196230373</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>2940761902</long>
+        <long>3558317646</long>
       </entry>
       <entry>
         <string>runQueue</string>
@@ -490,7 +492,7 @@
       </entry>
       <entry>
         <string>parse</string>
-        <long>1121554723</long>
+        <long>2009883372</long>
       </entry>
       <entry>
         <string>saveProgram</string>
@@ -499,12 +501,12 @@
     </timings>
     <internalCalls class="sorted-set"/>
     <sandbox>true</sandbox>
-    <iota>7</iota>
-    <head>1:7</head>
-    <start>2</start>
-    <done>false</done>
+    <iota>8</iota>
+    <head>1:8</head>
+    <done>true</done>
     <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
   </execution>
-  <completed>false</completed>
+  <completed>true</completed>
   <checkouts class="hudson.util.PersistedList"/>
 </flow-build>

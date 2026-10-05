@@ -17,3 +17,47 @@ Fetching upstream changes from https://github.com/ingesoft5/A00404257
  > git --version # 'git version 2.47.3'
 using GIT_ASKPASS to set credentials 
  > git fetch --tags --force --progress -- https://github.com/ingesoft5/A00404257 +refs/heads/*:refs/remotes/origin/* # timeout=10
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+WorkflowScript: 11: Invalid trigger type "githubPush". Valid trigger types: [upstream, cron, pollSCM] @ line 11, column 9.
+           githubPush()
+           ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1107)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:624)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:602)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:579)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:323)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:293)
+	at PluginClassLoader for script-security//org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox$Scope.parse(GroovySandbox.java:162)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:202)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:186)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:670)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.loadProgramAsync(CpsFlowExecution.java:928)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.onLoad(CpsFlowExecution.java:897)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun.getExecution(WorkflowRun.java:743)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun.onLoad(WorkflowRun.java:596)
+	at hudson.model.RunMap.retrieve(RunMap.java:290)
+	at hudson.model.RunMap.retrieve(RunMap.java:64)
+	at jenkins.model.lazy.AbstractLazyLoadRunMap.load(AbstractLazyLoadRunMap.java:451)
+	at jenkins.model.lazy.AbstractLazyLoadRunMap.load(AbstractLazyLoadRunMap.java:445)
+	at jenkins.model.lazy.AbstractLazyLoadRunMap.resolveBuildRef(AbstractLazyLoadRunMap.java:371)
+	at jenkins.model.lazy.AbstractLazyLoadRunMap$BuildReferenceMapAdapterResolver.resolveBuildRef(AbstractLazyLoadRunMap.java:528)
+	at jenkins.model.lazy.BuildReferenceMapAdapter.get(BuildReferenceMapAdapter.java:133)
+	at jenkins.model.lazy.AbstractLazyLoadRunMap.getByNumber(AbstractLazyLoadRunMap.java:387)
+	at hudson.model.RunMap.getById(RunMap.java:229)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun$Owner.run(WorkflowRun.java:991)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun$Owner.get(WorkflowRun.java:1003)
+	at PluginClassLoader for workflow-api//org.jenkinsci.plugins.workflow.flow.FlowExecutionList$DefaultStorage.resume(FlowExecutionList.java:252)
+	at PluginClassLoader for workflow-api//org.jenkinsci.plugins.workflow.flow.FlowExecutionList.resume(FlowExecutionList.java:127)
+	at jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+ERROR: Failed to load program
+Finished: FAILURE
