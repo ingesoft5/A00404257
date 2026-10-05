@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2026-10-05 14:03:07.861 UTC</timestamp>
+  <md5sum>702beff71bbe5daa655c285048c8042b</md5sum>
+  <fileName>Credential id=nexus-credentials name=admin/******</fileName>
+  <usages>
+    <entry>
+      <string>tudytrack-pipeline</string>
+      <ranges>5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

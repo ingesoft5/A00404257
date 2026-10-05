@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2026-10-05 14:01:31.307 UTC</timestamp>
+  <md5sum>3e39b1ccf2c64bf0d7b7de29e8a15208</md5sum>
+  <fileName>Credential id=github-credentials name=Giuseppe1r/******</fileName>
+  <usages>
+    <entry>
+      <string>tudytrack-pipeline</string>
+      <ranges>5</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1511.v2e3cb_0008ef0">
+      <timestamp>1791208891298</timestamp>
+      <itemFullName>tudytrack-pipeline</itemFullName>
+      <timestamp0>1791208891298</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>
